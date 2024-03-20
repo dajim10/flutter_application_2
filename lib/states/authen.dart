@@ -57,6 +57,7 @@ class _AuthenState extends State<Authen> {
         width: 250,
         child: WidgetButton(
             text: 'Login',
+            iconData: Icons.login,
             pressFunc: () {
               if (keyForm.currentState!.validate()) {
                 context.loaderOverlay.show();

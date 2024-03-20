@@ -29,7 +29,6 @@ class WidgetForm extends StatelessWidget {
         obscureText: obscure ?? false, // changed from obscu to obscure
         decoration: InputDecoration(
           filled: true,
-          fillColor: const Color.fromARGB(255, 216, 216, 216),
           border: InputBorder.none,
           suffixIcon: subfixWidget, // changed from subfixWidget to suffixWidget
           hintText: hint ?? '', // handle null case for hint
