@@ -10,6 +10,7 @@ class AppDialog {
     Widget? iconWidget,
     Widget? contentWidget,
     Widget? firstWidget,
+    Widget? secondWidget,
   }) {
     Get.dialog(
       AlertDialog(
@@ -17,9 +18,10 @@ class AppDialog {
         icon: iconWidget,
         content: contentWidget,
         actions: [
+          secondWidget ?? const SizedBox(),
           firstWidget ??
               WidgetButton(
-                text: 'Ok',
+                text: secondWidget == null ? 'Ok' : 'Cancel',
                 pressFunc: () => Get.back(),
                 gfButtonType: GFButtonType.outline,
                 iconData: Icons.check,

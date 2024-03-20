@@ -18,19 +18,22 @@ class _BodyServiceState extends State<BodyService> {
     super.initState();
 
     for (var i = 0; i < AppConstant.title.length; i++) {
-      items.add(Container(
-        decoration: BoxDecoration(
-          border: Border.all(width: 1, color: Colors.grey),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            WidgetImageAsset(
-              path: AppConstant.paths[i],
-            ),
-            WidgetText(data: AppConstant.title[i]),
-          ],
+      items.add(InkWell(
+        onTap: AppConstant.tapFuncs[i],
+        child: Container(
+          decoration: BoxDecoration(
+            border: Border.all(width: 1, color: Colors.grey),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              WidgetImageAsset(
+                path: AppConstant.paths[i],
+              ),
+              WidgetText(data: AppConstant.title[i]),
+            ],
+          ),
         ),
       ));
     }

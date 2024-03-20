@@ -40,6 +40,8 @@ dependencies:
   dio: ^5.4.1
   loader_overlay: ^4.0.0
   get_storage: ^2.1.1
+  url_launcher: ^6.2.5
+  external_app_launcher: ^4.0.0
 
 dev_dependencies:
   flutter_test:
