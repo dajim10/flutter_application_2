@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppConstant {
   // field
   static String appName = "RUTS MCAS";
+  static String urlApiLogin = 'https://api.rmutsv.ac.th/elogin';
 
   // method
   TextStyle? h1Style() {
